@@ -11,7 +11,9 @@
     "build": "dotenvx run -- next build",
     "start": "dotenvx run -- next start -p 3200",
     "lint": "eslint",
-    "fmt": "prettier --write \"**/*.{ts,tsx,md,json}\""
+    "fmt": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "fmt:check": "prettier --check \"**/*.{ts,tsx,md,json}\"",
+    "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "^2.28.2",
